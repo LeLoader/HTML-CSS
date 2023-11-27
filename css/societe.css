@@ -1,0 +1,207 @@
+/*FONT*/
+
+@font-face {
+    font-family: "Windlass";
+    src: url(../font/Windlass.ttf);
+}
+
+/*CSS*/
+
+*{
+    margin: 0
+}
+
+html{
+    overflow-x: hidden;
+    color: #f1eee5;
+}
+
+body{
+    width: 100vw;
+    height: fit-content;
+}
+
+h1, h2, h3{
+    font-family: "Windlass";
+    font-weight: 300;
+}
+
+h2{
+    margin-bottom: 2vh;
+    font-size: 200%;
+}
+
+h3{
+    font-size: 150%;
+}
+
+p{
+    font-size: 100%;
+}
+
+.centered{
+    margin: 0 5vw;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+}
+
+.logowrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100px;
+    margin-right: 1vw;
+}
+
+.logo{
+    width: 50%;
+    height: auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #0a1e25;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin: 15vh 10vw 0 10vw;
+}
+
+.crane{
+    height: 100%;
+    width: auto;
+    filter: invert(18%) sepia(70%) saturate(416%) hue-rotate(148deg) brightness(101%) contrast(91%);
+}
+
+.sideseparator{
+    height: 10px;
+    width: 40%;
+}
+
+.separator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 100%;
+    margin: 2vh 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5vw;
+    width: 80%;
+}
+
+.voyages{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin: 5vw 0;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin: 5vw 0;
+}
+
+.bonus{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.stuff{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.style{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 20vh;
+    width: auto;
+}
+
+.grandeimg{
+    height: 50vh;
+    width: auto;
+}
+
+@media screen and (max-width: 1000px){
+    .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .right{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: justify;
+    }
+    .left{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: justify;
+    }
+    .voyages, .bonus, .content, .stuff, .style, p{
+        width: 80%;
+        margin: 0 5vw;
+    }
+    img{
+        height: 30vh;
+    }
+}
