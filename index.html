@@ -8,6 +8,8 @@
         <!--CSS-->
         <link rel="icon" href="img/logo.png">
         <!--Icon-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     </head>
     <body>
         <header>
@@ -19,6 +21,17 @@
             </h1>
         </header>
         <main>
+            <section class = "option">
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="burger-nav">
+                    <li class="darkmode"><p>Darkmode</p><input type="checkbox" checked="true"></li>
+                    <li><a href="#formulaire" class="nohyperlink">Nous contacter</a></li>
+                </ul>
+            </section>
             <section class = "intro">
                 <h2>Une societe, c'est quoi ?</h2>
                 <p>Les sociétés de Sea of Theives sont des organisations aux objectifs divers et variés. De la collection d'or à la piraterie sans pitié, ils offrent aux pirates des voyages leurs permettant de trouver leur propre mode de vie.</p>
@@ -36,9 +49,73 @@
                 <a href="athenas_fortune.html" class="athenas_fortune"></a>
                 <a href="guild.html" class="guild"></a>
             </div>
+            <form id="formulaire">
+                <fieldset>
+                    <legend>Informations personnelles</legend>
+                    <label for="name">Nom </label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Mot de passe: </label>
+                    <input type="password" id="password" name="password" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Votre émissaire</legend>
+                    <input type="radio" id="gold_hoarders" name="emissary" value="gold_hoarders">
+                    <label for="gold_hoarders">Collectionneurs d'or</label>
+                    <input type="radio" id="order_of_souls" name="emissary" value="order_of_souls">
+                    <label for="order_of_souls">L'ordre des âmes</label>
+                    <input type="radio" id="merchant_alliance" name="emissary" value="merchant_alliance">
+                    <label for="merchant_alliance">Alliance des marchands</label>
+                    <input type="radio" id="reapers_bones" name="emissary" value="reapers_bones">
+                    <label for="reapers_bones">Les os de la Faucheuse</label>
+                    <input type="radio" id="athenas_fortune" name="emissary" value="athenas_fortune">
+                    <label for="athenas_fortune">Fortune d'Athena</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Votre niveau</legend>
+                    <input type="radio" id="beginner" name="level" value="beginner">
+                    <label for="beginner">Débutant</label>
+                    <input type="radio" id="intermediate" name="level" value="intermediate">
+                    <label for="intermediate">Intermédiaire</label>
+                    <input type="radio" id="advanced" name="level" value="advanced">
+                    <label for="advanced">Amateur</label>
+                    <input type="radio" id="expert" name="level" value="expert">
+                    <label for="expert">Expert</label>
+                    <input type="radio" id="pro" name="level" value="pro">
+                    <label for="pro">Professionel</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Region :</legend>
+                    <select id="region" name="region">
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asie</option>
+                        <option value="na">Amerique du Nord</option>
+                        <option value="sa">Amerique du Sud</option>
+                        <option value="africa">Afrique</option>
+                        <option value="oceania">Oceanie</option>
+                    </select>
+                </fieldset>
+            
+                <!-- Input de type submit pour le bouton de soumission -->
+                <input type="button" value="Envoyer" id="send">
+            </form>
+            
+        <swiper-container navigation="true">  
+            <swiper-slide><img src="img/Gold_Hoarders_bg.png"></img></swiper-slide>
+            <swiper-slide><img src="img/Order_of_Souls_bg.png"></img></swiper-slide>
+            <swiper-slide><img src="img/Merchant_Alliance_bg.png"></img></swiper-slide>
+            <swiper-slide><img src="img/Reapers_Bones_bg.png"></img></swiper-slide>
+            <swiper-slide><img src="img/Athenas_Fortune_bg.png"></img></swiper-slide>
+            <swiper-slide><img src="img/Guild_bg.png"></img></swiper-slide>        
+        </swiper-container>
         </main>
         <footer>
             <h3>ALL RIGHT RESERVED</h3>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

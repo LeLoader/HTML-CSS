@@ -79,12 +79,78 @@ footer{
     background-color: #8e3adc;
 }
 
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.option{
+    width: 90%;
+    margin: 15vh 10vw 0 10vw;
+}
+
+input{
+    margin: 0 1% 0 1%;
+}
+
+fieldset{
+    margin: 1%;
+}
+
+.bar{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+li > p{
+    margin: 0 1% 0 0;
+}
+
+
+.nohyperlink{
+    color: inherit;
+    text-decoration: none;
+}
+
+.darkmode{
+    display: flex;
+    flex-direction: row;
+}
+
+ul{
+    padding-inline-start: 0;
+}
+
+.burger-nav{
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+}
+
 .intro{
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 20vh;
-    margin: 15vh 10vw 0 10vw;
 }
 
 .crane{
